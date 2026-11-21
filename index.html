@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aswin Pratap Nadar | Python, Data & Agentic AI</title>
+  <meta name="description" content="Aswin Pratap Nadar: Python and data engineer with ~5 years of experience in backend development, GCP data pipelines and automation, now building multi-agent LLM systems and MLOps pipelines.">
+  <meta property="og:title" content="Aswin Pratap Nadar | Python, Data & Agentic AI">
+  <meta property="og:description" content="Python and data engineer building cloud data pipelines, multi-agent LLM systems and MLOps workflows.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand">aswin<span>.dev</span></a>
+    <nav aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme" class="icon-btn" aria-label="Toggle light/dark theme">◐</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero wrap">
+    <div class="hero-text">
+      <p class="eyebrow mono">Python · Data Engineering · Agentic AI</p>
+      <h1>Hi, I'm Aswin.<br>I turn messy data and manual work into <em>reliable systems</em>.</h1>
+      <p class="lead">Nearly 5 years building backend services, cloud data pipelines and automation in Python. Now completing an Executive PG Programme in Applied AI &amp; Agentic AI at IIIT Bangalore, with hands-on work in multi-agent LLM systems and MLOps.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn" target="_blank" rel="noopener noreferrer" href="assets/Aswin_Pratap_Nadar_Resume.pdf" download>Download resume</a>
+      </div>
+      <ul class="stats" aria-label="Highlights">
+        <li><strong>~5 yrs</strong><span>Python &amp; data experience</span></li>
+        <li><strong>4h → 2h</strong><span>BigQuery load time halved</span></li>
+        <li><strong>48% → 84%</strong><span>Triage accuracy, multi-agent system</span></li>
+      </ul>
+    </div>
+    <div class="hero-photo">
+      <div class="photo-frame">
+        <span class="initials" aria-hidden="true">AN</span>
+        <!-- Put your photo at assets/profile.jpg -->
+        <img src="assets/profile.jpg" alt="Portrait of Aswin Pratap Nadar" onerror="this.remove()">
+      </div>
+      <p class="mono loc">Mumbai, India</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="wrap section">
+    <h2><span class="mono num">01</span> About</h2>
+    <div class="about-grid">
+      <p>I'm a Python and data engineer who enjoys the unglamorous work that makes teams faster: automating recurring reports, moving enterprise data to the cloud, and building tools that find problems before people have to.</p>
+      <p>At Infisolve I led an SAP-to-GCP migration into BigQuery and built Looker Studio dashboards for business users. At TCS, working with ICICI Prudential, I automated reporting and log-analysis workflows and supported security teams with Akamai WAF analysis.</p>
+      <p>Today I'm focused on applied AI: orchestrating LLM agents with Google ADK, grounding them with RAG, evaluating them honestly, and shipping ML models with proper tracking, drift monitoring and explainability.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="wrap section">
+    <h2><span class="mono num">02</span> Projects</h2>
+    <div class="cards">
+
+      <article class="card">
+        <header>
+          <span class="tag">Academic capstone</span>
+          <h3>Health AI: Multi-Agent Healthcare Triage</h3>
+        </header>
+        <dl>
+          <dt>Problem</dt>
+          <dd>Community health workers need decision support for symptom assessment and triage.</dd>
+          <dt>Solution</dt>
+          <dd>Five sequential Google ADK agents with four function tools for hybrid RAG, drug-safety lookup, vital-sign extraction and severity scoring. Structured JSON outputs, plus a separate deterministic safety evaluator.</dd>
+          <dt>Outcome</dt>
+          <dd>On 50 fixed cases, accuracy rose from 48% (keyword-rule baseline) to 84%. Emergency recall reached 89% and under-triage fell from 46% to 6%.</dd>
+        </dl>
+        <p class="note">Transparency note: the safety gate was not met, the system is not clinically validated, and human review is required. I report this deliberately.</p>
+        <ul class="chips"><li>Python</li><li>Google ADK</li><li>LLMs</li><li>RAG</li><li>FunctionTool</li><li>JSON</li><li>pandas</li></ul>
+        <!-- Replace # with your repo URL -->
+        <a class="link" href="#" data-repo="health-ai">View code →</a>
+      </article>
+
+      <article class="card">
+        <header>
+          <span class="tag">Academic capstone</span>
+          <h3>Predictive Maintenance: End-to-End MLOps</h3>
+        </header>
+        <dl>
+          <dt>Problem</dt>
+          <dd>Unplanned equipment failures require early fault identification to reduce downtime.</dd>
+          <dt>Solution</dt>
+          <dd>Classification pipeline on 6,993 labelled sensor readings: feature engineering, training-only SMOTE, MLflow experiment tracking and Optuna tuning.</dd>
+          <dt>Outcome</dt>
+          <dd>XGBoost led the comparison with validation macro-F1 of 0.80 (80/20 stratified split). Added drift monitoring and SHAP explainability.</dd>
+        </dl>
+        <ul class="chips"><li>scikit-learn</li><li>XGBoost</li><li>LightGBM</li><li>MLflow</li><li>Optuna</li><li>Pandera</li><li>Evidently</li><li>SHAP</li></ul>
+        <a class="link" href="#" data-repo="predictive-maintenance">View code →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="wrap section">
+    <h2><span class="mono num">03</span> Experience</h2>
+    <ol class="timeline">
+
+      <li>
+        <div class="when mono">Apr 2026 – Present</div>
+        <div class="what">
+          <h3>Applied AI &amp; Agentic AI upskilling</h3>
+          <p class="org">Executive PG Programme · IIIT Bangalore (Jan–Dec 2026)</p>
+          <p>Full-time focus on LLM agents, RAG, evaluation and MLOps, with two capstone projects above.</p>
+        </div>
+      </li>
+
+      <li>
+        <div class="when mono">Oct 2023 – Mar 2026</div>
+        <div class="what">
+          <h3>System Engineer</h3>
+          <p class="org">Tata Consultancy Services · Client: ICICI Prudential</p>
+          <ul>
+            <li>Automated weekly and monthly reporting in Python, cutting preparation time from ~6 hours to ~2 hours.</li>
+            <li>Built log-analysis and incident-detection tools, reducing manual investigation from ~2 hours to ~45 minutes.</li>
+            <li>Analysed daily Akamai WAF reports and worked with security teams to investigate vulnerabilities and improve policies.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li>
+        <div class="when mono">May 2021 – May 2023</div>
+        <div class="what">
+          <h3>Senior Python Developer</h3>
+          <p class="org">Infisolve India Pvt. Ltd., Mumbai</p>
+          <ul>
+            <li>Led an end-to-end SAP-to-GCP migration with Python ETL pipelines loading enterprise data into BigQuery.</li>
+            <li>Optimised BigQuery loads with staging, parallel processing and automation, cutting run time from ~4 hours to ~2 hours.</li>
+            <li>Automated data-processing workflows (~2.5 hours to ~1 hour) and shipped web apps on DigitalOcean.</li>
+            <li>Built 6+ Looker Studio dashboards and mentored 2 junior developers.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li>
+        <div class="when mono">Dec 2020 – May 2021</div>
+        <div class="what">
+          <h3>Python Developer Intern</h3>
+          <p class="org">Infisolve India Pvt. Ltd., Mumbai</p>
+          <ul>
+            <li>Built responsive Flask and Bootstrap components integrated with Python backends.</li>
+            <li>Supported business reporting and data visualisation.</li>
+          </ul>
+        </div>
+      </li>
+
+    </ol>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="wrap section">
+    <h2><span class="mono num">04</span> Skills</h2>
+    <div class="skills">
+      <div><h3>Generative &amp; Agentic AI</h3><ul class="chips"><li>LLMs</li><li>Google ADK</li><li>Agent orchestration</li><li>RAG</li><li>Tool calling</li><li>JSON outputs</li><li>Prompt engineering</li><li>AI evaluation</li></ul></div>
+      <div><h3>ML &amp; MLOps</h3><ul class="chips"><li>scikit-learn</li><li>XGBoost</li><li>LightGBM</li><li>MLflow</li><li>Optuna</li><li>SHAP</li><li>Evidently</li><li>Pandera</li></ul></div>
+      <div><h3>Backend</h3><ul class="chips"><li>Python</li><li>SQL</li><li>Flask</li><li>FastAPI</li></ul></div>
+      <div><h3>Data engineering</h3><ul class="chips"><li>pandas</li><li>NumPy</li><li>ETL pipelines</li><li>BigQuery</li><li>Looker Studio</li></ul></div>
+      <div><h3>Cloud &amp; tools</h3><ul class="chips"><li>GCP</li><li>DigitalOcean</li><li>Git</li></ul></div>
+    </div>
+
+    <h3 class="sub">Education &amp; training</h3>
+    <ul class="edu">
+      <li><strong>Executive PG Programme, Applied AI &amp; Agentic AI</strong> · IIIT Bangalore · 2026 <em>(in progress)</em></li>
+      <li><strong>M.Sc. Computer Science</strong> · SIES College of Arts, Science &amp; Commerce · 2019–2021</li>
+      <li><strong>B.Sc. Computer Science</strong> · SIES College of Arts, Science &amp; Commerce · 2016–2019</li>
+      <li><strong>NPTEL: Python Data Structures &amp; Algorithms</strong> · IIT Madras · 2017</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="wrap section contact">
+    <h2><span class="mono num">05</span> Let's talk</h2>
+    <p class="lead">I'm open to Python, data engineering and applied AI roles. The fastest way to reach me is email.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:aswinpratapnadar@gmail.com">aswinpratapnadar@gmail.com</a>
+      <!-- Replace the two # links with your real profile URLs -->
+      <a class="btn" href="#" data-profile="linkedin">LinkedIn</a>
+      <a class="btn" href="#" data-profile="github">GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© <span id="year"></span> Aswin Pratap Nadar · Built with plain HTML, CSS and JS</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
